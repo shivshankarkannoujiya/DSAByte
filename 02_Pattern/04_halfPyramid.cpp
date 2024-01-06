@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-
+    
     int TotalRows;
     cout << "Enter Total-Rows : ";
     cin >> TotalRows;
