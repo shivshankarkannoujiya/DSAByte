@@ -4,9 +4,11 @@ using namespace std;
 int main()
 {
 
-    int n;
-    cout << "Enter n : ";
-    cin >> n;
+    int num;
+    cout << "Enter num : ";
+    cin >> num;
+
+    int n = num / 2;
 
     // Part-1
     for (int row = 0; row < n; row++)
