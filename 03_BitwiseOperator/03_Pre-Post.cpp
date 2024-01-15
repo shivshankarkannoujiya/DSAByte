@@ -22,10 +22,10 @@ int main()
     // cout << (a++) << endl; //5
 
     // Pre-Decrement
-    int a = 10;
-    cout << "Ans : <Pre-Increment> : " << (--a) * 10 << endl;
+    // int a = 10;
+    // cout << "Ans : <Pre-Increment> : " << (--a) * 10 << endl;
 
     // Post-Increment
-    int b = 10;
-    cout << "Ans : <Post-Increment> : " << (b--) * 10 << endl;
-}
+    //     int b = 10;
+    //     cout << "Ans : <Post-Increment> : " << (b--) * 10 << endl;
+    // }
