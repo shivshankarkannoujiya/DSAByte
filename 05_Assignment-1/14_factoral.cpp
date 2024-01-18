@@ -17,6 +17,6 @@ int main()
     cout << "Enter n : ";
     cin >> n;
 
-    int Ans = findFactorial(n);
+    long long int Ans = findFactorial(n);
     cout << "Factorial is : " << Ans << endl;
 }
