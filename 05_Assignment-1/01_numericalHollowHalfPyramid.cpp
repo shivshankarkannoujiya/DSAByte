@@ -21,6 +21,7 @@ void printNumericalHollowHalfPyramid(int n)
     }
 }
 
+
 int main()
 {
     int n;
