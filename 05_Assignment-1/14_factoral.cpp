@@ -3,7 +3,7 @@ using namespace std;
 
 int findFactorial(int n)
 {
-    int factorial = 1;
+    long long int factorial = 1;
     for (int i = 1; i <= n; i++)
     {
         factorial *= i;
