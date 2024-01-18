@@ -35,6 +35,15 @@ int returnMax(int numberOne, int numberTwo, int numberThree)
     }
 }
 
+// inbuilt Fn : max
+
+int returnMaxNum(int a, int b, int c)
+{
+    int ansOne = max(a, b);
+    int finalMax = max(ansOne, c);
+    return finalMax;
+}
+
 int main()
 {
 
@@ -44,4 +53,8 @@ int main()
     // calling fn
     int maxNum = returnMax(1, 2, 2);
     cout << "Max is : " << maxNum << endl;
+
+    // calling fn
+    int max = returnMaxNum(1, 2, 3);
+    cout << "Max is : " << max << endl;
 }
