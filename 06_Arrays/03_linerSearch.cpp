@@ -12,6 +12,7 @@ int main()
     {
         if (arr[i] == target)
         {
+            // found
             flag = 1;
             break;
         }
