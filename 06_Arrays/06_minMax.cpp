@@ -29,6 +29,22 @@ int getMinValue(int arr[], int size)
     }
     return minValue;
 }
+
+// maxValue
+int getMax(int arr[], int size)
+{
+
+    int maxValue = INT_MIN;
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] > maxValue)
+        {
+            // update
+            maxValue = arr[i];
+        }
+    }
+    return maxValue;
+}
 int main()
 {
     int arr[] = {1, 3, 6, 3, 9, 90, 12};
@@ -41,4 +57,8 @@ int main()
     // calling another function
     int min = getMinValue(arr, size);
     cout << "Min value is : " << min << endl;
+
+    // calling getMax function
+    int Maximum_value = getMax(arr, size);
+    cout << "Max value is : " << Maximum_value << endl;
 }
