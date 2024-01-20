@@ -23,5 +23,5 @@ int main()
     cout << d << endl;
 
     // Assigning value to a refrence variavle 
-    int &t = 6;
+    // int &t = 6;
 }
