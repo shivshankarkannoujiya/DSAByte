@@ -1,9 +1,8 @@
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-// Method-1 
+// Method-1
 vector<int> twoSum(vector<int> &nums, int target)
 {
     int n = nums.size();
@@ -24,6 +23,37 @@ vector<int> twoSum(vector<int> &nums, int target)
 }
 
 // Method-2
+// using 2 pointer approach
+vector<int> twoSum2pointerApproach(vector<int> &nums, int target)
+{
+    int n = nums.size();
+    int low = 0;
+    int high = n - 1;
+    vector<int> value;
+
+    // 1. Sort the vector
+    sort(nums.begin(), nums.end());
+    while (low < high)
+    {
+        int csum = nums[low] + nums[high];
+        if (csum == target)
+        {
+            value.push_back(low);
+            value.push_back(high);
+            return value;
+        }
+        else if (csum > target)
+        {
+            high--;
+        }
+        else
+        {
+            low++;
+        }
+    }
+    // if no piar found return , empty vector
+    return {};
+}
 
 int main()
 {
@@ -33,11 +63,12 @@ int main()
     cin >> target;
 
     // calling function
-    vector<int> ans = twoSum(nums, target);
+    // vector<int> ans = twoSum(nums, target);
+    vector<int> value = twoSum2pointerApproach(nums, target);
 
     // printing ans
-    for (auto it : ans)
+    for (auto it : value)
     {
-        cout<< it << "  ";
+        cout << it << "  ";
     }
 }
