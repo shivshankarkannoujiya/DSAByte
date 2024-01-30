@@ -51,7 +51,7 @@ vector<int> twoSum2pointerApproach(vector<int> &nums, int target)
             low++;
         }
     }
-    // if no piar found return , empty vector
+    // if no pair found return , empty vector
     return {};
 }
 
