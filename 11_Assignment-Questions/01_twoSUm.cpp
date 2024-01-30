@@ -35,14 +35,14 @@ vector<int> twoSum2pointerApproach(vector<int> &nums, int target)
     sort(nums.begin(), nums.end());
     while (low < high)
     {
-        int csum = nums[low] + nums[high];
-        if (csum == target)
+        int Csum = nums[low] + nums[high];
+        if (Csum == target)
         {
             value.push_back(low);
             value.push_back(high);
             return value;
         }
-        else if (csum > target)
+        else if (Csum > target)
         {
             high--;
         }
