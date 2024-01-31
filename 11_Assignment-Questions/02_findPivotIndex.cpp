@@ -11,7 +11,7 @@ int pivotIndex(vector<int> &nums)
     {
         int leftSum = 0;
         int rightSum = 0;
-                    
+
         // leftSum
         for (int j = 0; j < i; j++)
         {
