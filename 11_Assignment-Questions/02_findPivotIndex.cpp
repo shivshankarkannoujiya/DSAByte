@@ -18,7 +18,7 @@ int pivotIndex(vector<int> &nums)
             leftSum += nums[j];
         }
 
-        // rightSum
+        //  rightSum
         for (int j = i + 1; j < n; j++)
         {
             rightSum += nums[j];
